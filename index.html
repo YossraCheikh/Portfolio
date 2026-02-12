@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of a professional software developer - elegant, modern, and refined.">
+  <title>Portfolio - Software Developer</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" href="images/YC.png">
+</head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="nav" id="nav">
+    <div class=" nav-container">
+      <div class="nav-logo">YC</div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Yossra Cheikh</h1>
+        <p class="hero-title">IT Student & Full-Stack Developer</p>
+        <p class="hero-description">
+          Detail-oriented developer with expertise in modern web technologies. Specializing in building
+          robust, scalable applications with clean architecture and thoughtful user experiences.
+        </p>
+        <a href="#contact" class="hero-cta">
+          Let's Connect
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p class="about-text">
+          I'm a detail-oriented software developer with a passion for creating clean,
+          efficient code and intuitive user experiences. With expertise spanning full-stack
+          development, I bring ideas to life through thoughtful design and robust engineering.
+        </p>
+        <p class="about-text">
+          My approach combines technical precision with creative problem-solving,
+          always keeping the end user in mind. I believe great software is invisible—it
+          just works, and works beautifully.
+        </p>
+
+        <div class="tech-stack">
+          <span class="tech-tag">JavaScript</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">NextJS</span>
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">NestJS</span>
+          <span class="tech-tag">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card" data-project="jewelry" data-title="High-End Jewelry Boutique"
+          data-image="images/jewelry-preview.png">
+          <div class="project-image">
+            <i class="fas fa-gem"></i>
+          </div>
+          <h3 class="project-title">High-End Jewelry Boutique</h3>
+          <p class="project-description">
+            Fully functional e-commerce platform for luxury jewelry with shopping cart, checkout system,
+            and comprehensive admin dashboard for inventory management, order tracking, and product updates.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">Node.js</span>
+            <span class="project-tag">MySQL</span>
+            <span class="project-tag">E-commerce</span>
+          </div>
+          <a href="#" class="project-link" data-open-modal>
+            View Project <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-project="finance" data-title="Finance Management System"
+          data-image="images/finance-preview.png">
+          <div class="project-image">
+            <i class="fas fa-wallet"></i>
+          </div>
+          <h3 class="project-title">Finance Management System</h3>
+          <p class="project-description">
+            Enterprise finance management web application with RESTful APIs for accurate financial data handling.
+            Features data validation, error handling, and comprehensive testing for improved stability.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">NestJS</span>
+            <span class="project-tag">Next.js</span>
+            <span class="project-tag">REST API</span>
+            <span class="project-tag">TypeScript</span>
+          </div>
+          <a href="#" class="project-link" data-open-modal>
+            View Project <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-project="realestate" data-title="Real Estate Catalogue"
+          data-image="images/realestate-preview.png">
+          <div class="project-image">
+            <i class="fas fa-home"></i>
+          </div>
+          <h3 class="project-title">Real Estate Catalogue</h3>
+          <p class="project-description">
+            Professional property listing platform with organized display of property details and locations.
+            Features clear navigation, accurate data presentation, and intuitive browsing experience.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">SQLite</span>
+            <span class="project-tag">Responsive</span>
+          </div>
+          <a href="#" class="project-link" data-open-modal>
+            View Project <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-project="carrental" data-title="Auto & Co. Car Rental Platform"
+          data-image="images/car-preview.png">
+          <div class="project-image">
+            <i class="fas fa-car"></i>
+          </div>
+          <h3 class="project-title">Auto & Co. Car Rental Platform</h3>
+          <p class="project-description">
+            Full-stack car rental platform with vehicle inventory management, reservation system, and admin dashboard.
+            Features real-time availability tracking, booking management, and comprehensive vehicle catalog.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">PHP</span>
+            <span class="project-tag">MySQL</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Full-Stack</span>
+          </div>
+          <a href="#" class="project-link" data-open-modal>
+            View Project <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" data-project="organizer" data-title="Task Organizer App"
+          data-image="images/organizer-preview.png">
+          <div class="project-image">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h3 class="project-title">Task Organizer App</h3>
+          <p class="project-description">
+            Intuitive personal organization tool with calendar integration, category management, and task
+            prioritization.
+            Features a clean, modern interface for managing daily schedules and tracking productivity.
+          </p>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">CSS Modules</span>
+            <span class="project-tag">State Management</span>
+            <span class="project-tag">UI/UX</span>
+          </div>
+          <a href="#" class="project-link" data-open-modal>
+            View Project <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <div class="skills-grid">
+
+        <!-- Frontend Skills -->
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <i class="skill-category-icon fas fa-code"></i>
+            Frontend Development
+          </h3>
+          <ul class="skill-list">
+            <li class="skill-item">React & Next.js</li>
+            <li class="skill-item">HTML, CSS, JavaScript</li>
+            <li class="skill-item">Responsive Design</li>
+            <li class="skill-item">UI/UX Implementation</li>
+            <li class="skill-item">Modern Web Standards</li>
+          </ul>
+        </div>
+
+        <!-- Backend Skills -->
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <i class="skill-category-icon fas fa-server"></i>
+            Backend Development
+          </h3>
+          <ul class="skill-list">
+            <li class="skill-item">Node.js & NestJS</li>
+            <li class="skill-item">RESTful API Development</li>
+            <li class="skill-item">MySQL & SQLite</li>
+            <li class="skill-item">Data Validation</li>
+            <li class="skill-item">Error Handling & Testing</li>
+          </ul>
+        </div>
+
+        <!-- DevOps Skills -->
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <i class="skill-category-icon fas fa-tools"></i>
+            DevOps & Tools
+          </h3>
+          <ul class="skill-list">
+            <li class="skill-item">Git & Version Control</li>
+            <li class="skill-item">Microsoft Office Suite</li>
+            <li class="skill-item">Database Management</li>
+            <li class="skill-item">Data Entry & Accuracy</li>
+            <li class="skill-item">Digital Tools</li>
+          </ul>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <i class="skill-category-icon fas fa-user-check"></i>
+            Professional Skills
+          </h3>
+          <ul class="skill-list">
+            <li class="skill-item">Remote Work & Independence</li>
+            <li class="skill-item">Time Management</li>
+            <li class="skill-item">Attention to Detail</li>
+            <li class="skill-item">Problem-Solving</li>
+            <li class="skill-item">Clear Communication</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE SECTION -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience & Education</h2>
+      <div class="timeline">
+
+        <!-- Current Freelance Work -->
+        <div class="timeline-item">
+          <h3 class="timeline-title">Freelance Web Developer</h3>
+          <p class="timeline-company">Self-Employed (Remote)</p>
+          <p class="timeline-description">
+            Creating tailored web solutions for clients, from elegant e-commerce platforms to sophisticated
+            business management systems. I focus on delivering clean, efficient applications that combine
+            technical excellence with thoughtful user experiences, always ensuring projects exceed expectations.
+          </p>
+        </div>
+
+        <!-- Experience Item 1 -->
+        <div class="timeline-item">
+          <h3 class="timeline-title">Full-Stack Development Intern</h3>
+          <p class="timeline-company">Riverbyte Software, Tunisia (Remote)</p>
+          <p class="timeline-description">
+            Contributed to an enterprise finance management platform, focusing on robust backend architecture
+            and seamless frontend integration. Strengthened expertise in API development, data validation,
+            and delivering reliable solutions under real-world constraints.
+          </p>
+        </div>
+
+        <!-- Experience Item 2 -->
+        <div class="timeline-item">
+          <h3 class="timeline-title">Frontend Development Intern</h3>
+          <p class="timeline-company">Provesta Software, Tunisia (Remote)</p>
+          <p class="timeline-description">
+            Designed and developed an intuitive task management application with a focus on user experience
+            and clean component architecture. Gained valuable experience in building scalable React applications
+            and managing complex application state effectively.
+          </p>
+        </div>
+
+        <!-- Education Item -->
+        <div class="timeline-item">
+          <h3 class="timeline-title">IT Diploma Student</h3>
+          <p class="timeline-company">Higher Institute of Technological Studies (ISET), Tunisia</p>
+          <p class="timeline-description">
+            Building a strong foundation in software development through comprehensive coursework and hands-on projects.
+            Continuously expanding knowledge in web technologies, databases, and system design while developing
+            practical skills through collaborative academic work.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Let's Work Together</h2>
+      <div class="contact-content">
+        <p class="contact-intro">
+          I'm always interested in hearing about new projects and opportunities.
+          Whether you have a question or just want to say hello, I'll do my best to get back to you.
+        </p>
+
+        <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+          <!-- Web3Forms Access Key -->
+          <input type="hidden" name="access_key" value="d90f7267-aa6a-4eb8-bd78-bf49d0591395">
+
+          <!-- Optional: Redirect after submission -->
+          <input type="hidden" name="redirect" value="false">
+
+          <!-- Optional: Custom subject line -->
+          <input type="hidden" name="subject" value="New Portfolio Contact Form Submission">
+
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Your message..."
+              required></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        © 2026 Yossra Cheikh. Designed with care and attention to detail.
+      </p>
+    </div>
+  </footer>
+
+  <!-- PROJECT PREVIEW MODAL -->
+  <div class="project-modal" id="projectModal">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-container">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal-content">
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <div class="modal-image-container">
+          <img class="modal-image" id="modalImage" src="" alt="Project preview">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
