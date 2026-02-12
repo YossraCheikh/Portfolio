@@ -861,14 +861,17 @@ a:hover {
     top: var(--nav-height);
     left: 0;
     right: 0;
+    bottom: 0;
+    height: calc(100vh - var(--nav-height));
     background: var(--color-bg-tertiary);
     flex-direction: column;
     padding: var(--space-xl);
     gap: var(--space-lg);
     transform: translateY(-100%);
     transition: transform var(--transition-slow);
+    z-index: 998;
     box-shadow: var(--shadow-lg);
-    border-bottom: 1px solid var(--color-taupe-light);
+    border-top: 1px solid var(--color-taupe-light);
   }
 
   .nav-menu.active {
@@ -876,7 +879,21 @@ a:hover {
   }
 
   .nav-toggle {
-    display: block;
+    display: flex !important;
+    width: 44px;
+    height: 44px;
+    background: transparent;
+    border: 1px solid var(--color-taupe-light);
+    border-radius: var(--radius-sm);
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .nav-toggle i {
+    font-size: 1.5rem;
   }
 
   .hero-name {
